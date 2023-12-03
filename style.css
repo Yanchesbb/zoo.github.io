@@ -2,17 +2,18 @@ body {
     font-family: 'Lato', Verdana;
     font-size: 100%;
     background: #fff;
+    margin: 0;
   }
-  .wrap
-  {
-    margin: 0 auto;
-    width: 70%; 
+ 
+  .containermain{
+    width: 1400px;
   }
   .header{
     padding: 1.3em 0em; 
   }
   .logo{
     float: left; 
+    padding-left: 250px;
   }
   .logo a {
     display: block; 
@@ -20,6 +21,7 @@ body {
   .nav {
     float: right; /* обтекание логотипа */
     margin-top: 0.82em;
+    padding-right: 50px;
   }
   .nav > ul > li {
     display:inline-block; /* переопределение в строчно-блочный */
@@ -41,7 +43,6 @@ body {
     transition: 0.9s;
   }
   .blocknav{
-    margin-top: 0.82em;
     height: 100%; 
     width: 170px; 
     position: fixed;
@@ -62,38 +63,50 @@ body {
  }
  .container{
     display: flex;
-  width: 300px;
-  height: 150px;
-  align-items: center;
-  padding: 10px;
+    width: 300px;
+    height: 250px;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+    padding-left:200px ;
 }
-.item1{
-    flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
+.item{
+    height: 400px;
+    width: 300px;
+    padding-right: 150px;
+    text-align: center;
+    align-content: space-around;
 }
-.item2{
-    flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
+
+.item>img{
+  width: 250px;
+  height: 300px;
 }
-.item3{
-    flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
+.item__row{
+  display: flex;
+  margin-bottom: 150px;
 }
-.item4{
-    flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
+
+.button{
+  margin-top: 20px;
+  display: flex;
+  justify-content:baseline;
+  align-items: stretch;
+  flex-direction: column;
+  padding-bottom: 0px;
 }
-.item5{
-    flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
+
+button{
+  margin-top: 10px;
+  background-color: #C59D7A;
+  border: none;
 }
-.item6{
-    flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
+
+button:active{
+  background-color: #643D26;
 }
+/*
+#chica{
+  width: auto;
+  height: 280px;
+}*/
