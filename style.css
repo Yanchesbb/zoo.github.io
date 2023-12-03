@@ -9,7 +9,7 @@ body {
     width: 1400px;
   }
   .header{
-    padding: 1.3em 0em; 
+    padding: 1.2em 0em; 
   }
   .logo{
     float: left; 
@@ -68,18 +68,23 @@ body {
     align-items: center;
     padding-top: 100px;
     flex-direction: column;
-    padding-left:200px ;
+    padding-left:100px ;
 }
 .item{
     height: 400px;
     width: 300px;
-    padding-right: 150px;
+    padding-right: 50px;
     text-align: center;
     align-content: space-around;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #444;
+    
 }
 
 .item>img{
-  width: 250px;
+  width: 200px;
   height: 300px;
 }
 .item__row{
@@ -94,6 +99,8 @@ body {
   align-items: stretch;
   flex-direction: column;
   padding-bottom: 0px;
+  font-family: 'Lato', sans-serif;
+  color: #444;
 }
 
 button{
@@ -105,8 +112,3 @@ button{
 button:active{
   background-color: #643D26;
 }
-/*
-#chica{
-  width: auto;
-  height: 280px;
-}*/
